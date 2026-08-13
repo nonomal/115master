@@ -30,3 +30,12 @@ yalc.lock
 
 # vitest
 coverage
+
+# git worktrees
+.worktrees/
+
+# Turborepo
+.turbo
+
+# Local Claude settings
+.claude/settings.local.json

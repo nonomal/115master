@@ -1,101 +1,90 @@
-# 115Master
+<div align="center">
+<h1>115Master</h1>
 
-[![Tampermonkey](https://img.shields.io/badge/Tampermonkey-v5.3.3%2B-blue?logo=tampermonkey&logoColor=white)](https://www.tampermonkey.net/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+<br/>
+
+[![GitHub Release](https://img.shields.io/github/v/release/cbingb666/115master?logo=github)](https://github.com/cbingb666/115master/releases/latest)
+[![GitHub Downloads](https://img.shields.io/github/downloads/cbingb666/115master/115master.user.js?displayAssetName=false&logo=Github)](https://github.com/cbingb666/115master/releases)
+[![Last Commit](https://img.shields.io/github/last-commit/cbingb666/115master?logo=github)](https://github.com/cbingb666/115master/commits/main)
+[![License](https://img.shields.io/github/license/cbingb666/115master)](LICENSE)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/cbingb666/115master)
 
-115Master 是一个 115 网盘的 Tampermonkey 脚本，旨在提升 `115网盘` 的浏览体验。
+<br/>
 
-![preview](https://github.com/user-attachments/assets/a12a4f95-7af2-4852-a9a6-d354b4785e9c)
+![preview](https://github.com/user-attachments/assets/b0106128-ccb1-429f-8c4e-43b9f3d9d81d)
+
+</div>
 
 ## 功能
 
-### 播放器
+**播放器:**
 
-- 🎨 `Ultra` 画质
-- 👁 视频缩略图
-- 🤖 在线外挂字幕
-- 🎉 支持一键唤起 [IINA](https://iina.io/) 播放
-- 🖼 画中画
-- ⌚ 播放列表展示
-- ⌨️ 自定义快捷键
-- 🎨 视频色彩调整
+- Ultra 画质
+- 视频缩略图
+- 在线字幕
+- [IINA](https://iina.io/) 播放
+- 画中画
+- 播放列表
+- 自定义快捷键
+- 视频色彩调整
 
-### 文件列表
+**文件列表:**
 
-- 显示视频封面
-- 文件列表点击鼠标中键打开文件夹新标签页
-- Tab 标题上显示当前目录路径
-- 支持文件下载（仅支持单文件）
-- 云下载离线任务，免刷新重定向
-- 滚动位置记忆
+- 视频封面
+- 标题显示路径
 - 返回目录按钮
+- 记忆滚动位置
+- 离线任务免刷新重定向
+- 文件下载（仅支持单文件）
+- 文件夹鼠标中键新标签页打开
 
-### Magnet
+**Magnet:**
 
-支持任何网站的 Magnet 链接一键唤起离线任务。
+支持 [任何网站的 Magnet 链接一键唤起离线任务](https://github.com/cbingb666/115master/discussions/238)。
 
-[如何使用 Magnet 链接一键打开离线任务？](https://github.com/cbingb666/115master/discussions/238)
+## 安装
 
-## 使用安装
+1. 使用 `Chrome 130+` 或 `115Browser 35+` 浏览器。
 
-1. 选择浏览器 `Chrome 130+` 或 `115Browser 35+`。
-
-2. 安装 [Tampermonkey v5.3.3+](https://www.tampermonkey.net/)。
+2. 安装 [Tampermonkey v5.3.3+](https://www.tampermonkey.net/) 或 [ScriptCat](https://github.com/scriptscat/scriptcat/blob/main/README_zh-CN.md#-%E5%AE%89%E8%A3%85%E6%89%A9%E5%B1%95)。
 
 3. 开启 [浏览器扩展开发者模式](https://www.tampermonkey.net/faq.php#Q209)。
 
-4. 点击 [115master.user.js](https://github.com/cbingb666/115master/releases/latest/download/115master.user.js) 安装 【115Master】脚本。
-
-5. 在油猴面板勾选启动 【115Master】脚本并刷新 115 主页开始使用。
-
-6. 安装完成后如果没有看到文件列表中有【master播放】的按钮，请检查有没有其他脚本导致冲突或重启浏览器。
-
-<img width="329" alt="image" src="https://github.com/user-attachments/assets/189ac578-0592-43bd-ab75-b62cbe6f5170" />
-
-👆上面一通操作后，还是无法使用的话请提交 [Issues](https://github.com/cbingb666/115master/issues)。
+4. 安装 [115Master](https://github.com/cbingb666/115master/releases/latest/download/115master.user.js)。
 
 ## 开放功能
 
-支持其他插件或应用唤起 115Master 的播放器，根据下方链接传入
+支持其他插件或应用通过 URL 唤起 115Master 的播放器
 
-示例: `https://115.com/web/lixian/master/video/?cid=${cid}&pick_code=${pick_code}`
+**示例:**
 
-- cid: 非必填，目录ID，为空时将无法获取播放列表。
-- pick_code: 必填，文件提取码。
+`https://115.com/web/lixian/master/video/?pick_code=${pick_code}`
 
-## 开发
+**参数:**
 
-环境基准
-
-- Node.js v20+
-- pnpm v9+
-
-安装依赖
-
-```sh
-pnpm install
-```
-
-运行开发环境
-
-```bash
-pnpm dev
-```
-
-构建
-
-```bash
-pnpm build
-```
+| Query     | Required | Description |
+| --------- | -------- | ----------- |
+| pick_code | 是       | 文件提取码  |
 
 ## 常见问题
 
 [Q&A](https://github.com/cbingb666/115master/discussions/categories/q-a)
 
+## 贡献
+
+欢迎贡献代码！请查阅 [CONTRIBUTING.md](CONTRIBUTING.md) 了解开发环境搭建和工作流程。
+
+## 鸣谢
+
+[@zhaohappy](https://github.com/zhaohappy) 提供了 [AvPlayer](https://zhaohappy.github.io/libmedia/docs/guide/player)
+
 ## 赞助
 
 [为爱发电~ 为 Master 添把柴火🔥](https://afdian.com/a/115Master)
+
+## 许可证
+
+[MIT](LICENSE)
 
 ## 免责声明
 
@@ -112,7 +101,3 @@ pnpm build
 如本软件功能可能违反任何法律法规或第三方权益，请立即停止使用并删除。
 
 请尊重知识产权，遵守相关法律法规，合法、合理地开展技术研究活动。
-
-## 鸣谢
-
-- [@zhaohappy](https://github.com/zhaohappy) 提供了 [AvPlayer](https://zhaohappy.github.io/libmedia/docs/guide/player)
